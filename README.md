@@ -1,5 +1,5 @@
 ---
-title: Flowershow LessProng
+title: Flowershow LessFlowery
 description: Sip, code, repeat—bite-sized reflections on leveling up as a developer, each brewed alongside a fresh cup and a quick café review.
 showHero: true
 image: /assets/fs-hero.webp
