@@ -1,5 +1,5 @@
 /*
- * FLOWERSHOW THEME: LESSPRONG
+ * FLOWERSHOW THEME: LESSFLOWERY
  * 
  * Inspired by the visual style of LessWrong
  * https://www.lesswrong.com/
@@ -222,7 +222,7 @@ font-family: 'Wittgenstein', serif;
     --width-sidebar: 14rem;
     --width-toc: 14rem;
     --width-hero-no-img: 42.5rem;
-    --width-hero-img: 82.5rem;
+    --width-hero-img: 62.5rem;
     --width-list-component: 48rem; /* 768px */
     /*--width-navbar: 82.5rem;
     --width-footer: 82.5rem;*/
@@ -2184,7 +2184,7 @@ body {
     text-align: center;
     font-family: var(--font-heading);
     min-height: 40svh;
-    padding: 8rem 0;
+    padding: 8rem 0 4rem 0;
 }
 
 .page-hero.has-image {
@@ -2220,8 +2220,9 @@ body {
 @media (min-width: 1024px) {
     .page-hero-content-container {
         padding: 0;
-        grid-column-start: 7;
-        grid-column-end: 13;
+        /*grid-column-start: 7;
+        grid-column-end: 13;*/
+        grid-column: span 6 / span 6;
     }
 }
 
@@ -2243,8 +2244,9 @@ body {
     .page-hero-content {
         margin-left:0;
         margin-right: 0;
-        padding-left: 3rem;
-        padding-right: 3rem
+        padding: 0;
+        /*padding-left: 3rem;
+        padding-right: 3rem*/
     }
 }
 
@@ -2290,10 +2292,11 @@ body {
 @media (min-width: 1024px) {
     .page-hero-image-container {
         margin-right:0;
-        grid-column-start: 1;
+        /*grid-column-start: 1;
         grid-column-end: 7;
-        grid-row-start: 1;
-        padding-left: 3rem;
+        grid-row-start: 1;*/
+        grid-column: span 6 / span 6;
+        /*padding-left: 3rem;*/
     }
 }
 
@@ -2401,6 +2404,26 @@ body {
     margin: auto;
 }
 
+/*.layout-inner:not(.has-sidebar-and-toc, .has-sidebar, .has-toc) .list-component {
+    margin-left: -2rem;
+    margin-right: -2rem;
+}
+
+@media (min-width: 640px) {
+    .layout-inner:not(.has-sidebar-and-toc, .has-sidebar, .has-toc) .list-component {
+        margin-left: -2.5rem;
+        margin-right: -2.5rem;
+    }
+}*/
+
+@media (min-width: 1024px) {
+    .layout-inner:not(.has-sidebar-and-toc, .has-sidebar, .has-toc) .list-component {
+        margin-left: -3rem;
+        margin-right: -3rem;
+        margin-top: -4rem;
+    }
+}
+
 .list-component-item {
     position: relative;
     isolation: isolate;
@@ -2408,7 +2431,7 @@ body {
     /*flex-direction: column;*/
     flex-direction:row;
     justify-content: space-between;
-    gap: 2rem;
+    gap: 1rem;
     border-color: var(--color-foreground-100);
     border-bottom-width: 0px;
     /*padding-top: 1rem;
